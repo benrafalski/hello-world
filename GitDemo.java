@@ -1,9 +1,10 @@
 /*****
- * Edit this line to have your name.
+ * Ben Rafalski
  ******/
 public class GitDemo {
     
     private double previousNumber;
+    private double reverseNum;
     
     public GitDemo() {
         previousNumber = 1;
@@ -13,8 +14,8 @@ public class GitDemo {
      * This function should add 'num' to 'previousNumber' and return the sum.
     *****/
     public double addNumber(double num) {
-        System.out.print("Add num to previousNumber");
-        return 0;
+        double sum = num + previousNumber;
+        return sum;
     }
     
     /*****
@@ -25,10 +26,10 @@ public class GitDemo {
     public double findFactorial(int num) {
         double newNumber = 1;
         
+        
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
-        
         return newNumber;
     }
     
@@ -45,7 +46,7 @@ public class GitDemo {
             factorialNumber = factorialNumber * 10 + temp;
             num /= 10;
         }
-        
+        reverseNum = factorialNumber;
         return factorialNumber;
     }
     
